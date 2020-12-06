@@ -26,6 +26,7 @@ void liberar_vetor_de_parametros(vetor_de_parametros *vp);
 double calcular_b(double N_b, double T_b, double S_b0, double I_b0);
 double calcular_k(double m_k, double n_k, double T_k);
 void calcular_mec_sir(vetor_de_parametros *vp, Dados_entrada *dados_entrada);
+
 void calcular_mec_sir_mortes(vetor_de_parametros *vp, Dados_entrada *dados_entrada);
 
 #endif
