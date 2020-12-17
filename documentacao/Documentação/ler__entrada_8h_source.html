@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Simulação Epidemiológica - Doc: Código-Fonte de simulacao_epidemiologica/ler_entrada.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Simulação Epidemiológica - Doc
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_447b1cade2c389319ea072603a2ef047.html">simulacao_epidemiologica</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ler_entrada.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ler__entrada_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LER_ENTRADA_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LER_ENTRADA_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="ler__entrada_8h.html#ac9ba10bb072a106aac35f41b0d1dfb82">    6</a></span>&#160;FILE *<a class="code" href="ler__entrada_8h.html#ac9ba10bb072a106aac35f41b0d1dfb82">entrada</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structdados__entrada__e.html">    8</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structdados__entrada__e.html">dados_entrada_e</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structdados__entrada__e.html#a67480da517c2afe05f5f60582ed7bd12">    9</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structdados__entrada__e.html#a67480da517c2afe05f5f60582ed7bd12">S0</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structdados__entrada__e.html#a1380a4e09f70f7fd8da199459a8c56ab">   10</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structdados__entrada__e.html#a1380a4e09f70f7fd8da199459a8c56ab">I0</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structdados__entrada__e.html#aafa8169d12bdc7851e12053a375ddf44">   11</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structdados__entrada__e.html#aafa8169d12bdc7851e12053a375ddf44">R0</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="structdados__entrada__e.html#a05e56fd90c194f898e2958f830ce6335">   12</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structdados__entrada__e.html#a05e56fd90c194f898e2958f830ce6335">h</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structdados__entrada__e.html#a2ec39d4405c96cce0035b351b50a46f6">   13</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structdados__entrada__e.html#a2ec39d4405c96cce0035b351b50a46f6">N_b</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structdados__entrada__e.html#a31721b456670a12d7a1d2070f8721e7d">   14</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structdados__entrada__e.html#a31721b456670a12d7a1d2070f8721e7d">T_b</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structdados__entrada__e.html#a9f9713aadd131f6da193c9a299e36dc4">   15</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structdados__entrada__e.html#a9f9713aadd131f6da193c9a299e36dc4">S_b0</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structdados__entrada__e.html#a9b11356bffac52f6df082ce8680fec6c">   16</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structdados__entrada__e.html#a9b11356bffac52f6df082ce8680fec6c">I_b0</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structdados__entrada__e.html#ae5b8ad595415a5bad2363a9237eb6dd1">   17</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structdados__entrada__e.html#ae5b8ad595415a5bad2363a9237eb6dd1">m_k</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structdados__entrada__e.html#a4de6779745f6da58474b58fb09a4bfa2">   18</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structdados__entrada__e.html#a4de6779745f6da58474b58fb09a4bfa2">n_k</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structdados__entrada__e.html#a73afb9cbd03a636357620acf0af581cd">   19</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structdados__entrada__e.html#a73afb9cbd03a636357620acf0af581cd">T_k</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structdados__entrada__e.html#afff85eea8c75b2afb18c1ba6f1d9b142">   20</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structdados__entrada__e.html#afff85eea8c75b2afb18c1ba6f1d9b142">dias</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structdados__entrada__e.html#a53cf41347c61931326258f0fb5ff71c3">   21</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structdados__entrada__e.html#a53cf41347c61931326258f0fb5ff71c3">percepcao</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structdados__entrada__e.html#ae68e41b6f1903fe25a33fdd3a48e9928">   22</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structdados__entrada__e.html#ae68e41b6f1903fe25a33fdd3a48e9928">T_b2</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structdados__entrada__e.html#a2357066f07d3638682be2602dd27253f">   23</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structdados__entrada__e.html#a2357066f07d3638682be2602dd27253f">T_k2</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="ler__entrada_8h.html#ad94efd8a9a47210709ecb292c8519a43">   24</a></span>&#160;} <a class="code" href="ler__entrada_8h.html#ad94efd8a9a47210709ecb292c8519a43">Dados_entrada</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<a class="code" href="structdados__entrada__e.html">Dados_entrada</a>* <a class="code" href="ler__entrada_8h.html#a184a68cb853b4d70084958a0123a27be">ler_arquivo</a>(<span class="keywordtype">char</span> arquivo[]);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructdados__entrada__e_html_a9f9713aadd131f6da193c9a299e36dc4"><div class="ttname"><a href="structdados__entrada__e.html#a9f9713aadd131f6da193c9a299e36dc4">dados_entrada_e::S_b0</a></div><div class="ttdeci">double S_b0</div><div class="ttdef"><b>Definition:</b> ler_entrada.h:15</div></div>
+<div class="ttc" id="aler__entrada_8h_html_ad94efd8a9a47210709ecb292c8519a43"><div class="ttname"><a href="ler__entrada_8h.html#ad94efd8a9a47210709ecb292c8519a43">Dados_entrada</a></div><div class="ttdeci">struct dados_entrada_e Dados_entrada</div></div>
+<div class="ttc" id="astructdados__entrada__e_html_a05e56fd90c194f898e2958f830ce6335"><div class="ttname"><a href="structdados__entrada__e.html#a05e56fd90c194f898e2958f830ce6335">dados_entrada_e::h</a></div><div class="ttdeci">double h</div><div class="ttdef"><b>Definition:</b> ler_entrada.h:12</div></div>
+<div class="ttc" id="astructdados__entrada__e_html_a9b11356bffac52f6df082ce8680fec6c"><div class="ttname"><a href="structdados__entrada__e.html#a9b11356bffac52f6df082ce8680fec6c">dados_entrada_e::I_b0</a></div><div class="ttdeci">double I_b0</div><div class="ttdef"><b>Definition:</b> ler_entrada.h:16</div></div>
+<div class="ttc" id="astructdados__entrada__e_html_a2357066f07d3638682be2602dd27253f"><div class="ttname"><a href="structdados__entrada__e.html#a2357066f07d3638682be2602dd27253f">dados_entrada_e::T_k2</a></div><div class="ttdeci">double T_k2</div><div class="ttdef"><b>Definition:</b> ler_entrada.h:23</div></div>
+<div class="ttc" id="astructdados__entrada__e_html_ae68e41b6f1903fe25a33fdd3a48e9928"><div class="ttname"><a href="structdados__entrada__e.html#ae68e41b6f1903fe25a33fdd3a48e9928">dados_entrada_e::T_b2</a></div><div class="ttdeci">double T_b2</div><div class="ttdef"><b>Definition:</b> ler_entrada.h:22</div></div>
+<div class="ttc" id="astructdados__entrada__e_html_a73afb9cbd03a636357620acf0af581cd"><div class="ttname"><a href="structdados__entrada__e.html#a73afb9cbd03a636357620acf0af581cd">dados_entrada_e::T_k</a></div><div class="ttdeci">double T_k</div><div class="ttdef"><b>Definition:</b> ler_entrada.h:19</div></div>
+<div class="ttc" id="aler__entrada_8h_html_a184a68cb853b4d70084958a0123a27be"><div class="ttname"><a href="ler__entrada_8h.html#a184a68cb853b4d70084958a0123a27be">ler_arquivo</a></div><div class="ttdeci">Dados_entrada * ler_arquivo(char arquivo[])</div><div class="ttdef"><b>Definition:</b> ler_entrada.c:5</div></div>
+<div class="ttc" id="astructdados__entrada__e_html_a1380a4e09f70f7fd8da199459a8c56ab"><div class="ttname"><a href="structdados__entrada__e.html#a1380a4e09f70f7fd8da199459a8c56ab">dados_entrada_e::I0</a></div><div class="ttdeci">double I0</div><div class="ttdef"><b>Definition:</b> ler_entrada.h:10</div></div>
+<div class="ttc" id="astructdados__entrada__e_html_a31721b456670a12d7a1d2070f8721e7d"><div class="ttname"><a href="structdados__entrada__e.html#a31721b456670a12d7a1d2070f8721e7d">dados_entrada_e::T_b</a></div><div class="ttdeci">double T_b</div><div class="ttdef"><b>Definition:</b> ler_entrada.h:14</div></div>
+<div class="ttc" id="astructdados__entrada__e_html_a2ec39d4405c96cce0035b351b50a46f6"><div class="ttname"><a href="structdados__entrada__e.html#a2ec39d4405c96cce0035b351b50a46f6">dados_entrada_e::N_b</a></div><div class="ttdeci">double N_b</div><div class="ttdef"><b>Definition:</b> ler_entrada.h:13</div></div>
+<div class="ttc" id="astructdados__entrada__e_html_a4de6779745f6da58474b58fb09a4bfa2"><div class="ttname"><a href="structdados__entrada__e.html#a4de6779745f6da58474b58fb09a4bfa2">dados_entrada_e::n_k</a></div><div class="ttdeci">double n_k</div><div class="ttdef"><b>Definition:</b> ler_entrada.h:18</div></div>
+<div class="ttc" id="astructdados__entrada__e_html"><div class="ttname"><a href="structdados__entrada__e.html">dados_entrada_e</a></div><div class="ttdef"><b>Definition:</b> ler_entrada.h:8</div></div>
+<div class="ttc" id="astructdados__entrada__e_html_ae5b8ad595415a5bad2363a9237eb6dd1"><div class="ttname"><a href="structdados__entrada__e.html#ae5b8ad595415a5bad2363a9237eb6dd1">dados_entrada_e::m_k</a></div><div class="ttdeci">double m_k</div><div class="ttdef"><b>Definition:</b> ler_entrada.h:17</div></div>
+<div class="ttc" id="astructdados__entrada__e_html_a67480da517c2afe05f5f60582ed7bd12"><div class="ttname"><a href="structdados__entrada__e.html#a67480da517c2afe05f5f60582ed7bd12">dados_entrada_e::S0</a></div><div class="ttdeci">double S0</div><div class="ttdef"><b>Definition:</b> ler_entrada.h:9</div></div>
+<div class="ttc" id="astructdados__entrada__e_html_afff85eea8c75b2afb18c1ba6f1d9b142"><div class="ttname"><a href="structdados__entrada__e.html#afff85eea8c75b2afb18c1ba6f1d9b142">dados_entrada_e::dias</a></div><div class="ttdeci">double dias</div><div class="ttdef"><b>Definition:</b> ler_entrada.h:20</div></div>
+<div class="ttc" id="astructdados__entrada__e_html_a53cf41347c61931326258f0fb5ff71c3"><div class="ttname"><a href="structdados__entrada__e.html#a53cf41347c61931326258f0fb5ff71c3">dados_entrada_e::percepcao</a></div><div class="ttdeci">double percepcao</div><div class="ttdef"><b>Definition:</b> ler_entrada.h:21</div></div>
+<div class="ttc" id="aler__entrada_8h_html_ac9ba10bb072a106aac35f41b0d1dfb82"><div class="ttname"><a href="ler__entrada_8h.html#ac9ba10bb072a106aac35f41b0d1dfb82">entrada</a></div><div class="ttdeci">FILE * entrada</div><div class="ttdef"><b>Definition:</b> ler_entrada.h:6</div></div>
+<div class="ttc" id="astructdados__entrada__e_html_aafa8169d12bdc7851e12053a375ddf44"><div class="ttname"><a href="structdados__entrada__e.html#aafa8169d12bdc7851e12053a375ddf44">dados_entrada_e::R0</a></div><div class="ttdeci">double R0</div><div class="ttdef"><b>Definition:</b> ler_entrada.h:11</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

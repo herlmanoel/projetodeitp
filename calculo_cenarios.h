@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include "ler_entrada.h"
 
-// parametros da saida
 typedef struct parametros_type {
     double S0; 
     double I0; 
@@ -13,7 +12,6 @@ typedef struct parametros_type {
     double tempo;
 } Parametros_da_saida;
 
-// vetor de parametros da saida
 typedef struct vetor_de_parametros_type {
     int tamanho;
     int tamanho_atual;

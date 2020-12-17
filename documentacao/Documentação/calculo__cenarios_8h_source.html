@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Simulação Epidemiológica - Doc: Código-Fonte de simulacao_epidemiologica/calculo_cenarios.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Simulação Epidemiológica - Doc
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_447b1cade2c389319ea072603a2ef047.html">simulacao_epidemiologica</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">calculo_cenarios.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="calculo__cenarios_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CALCULO_CENARIO_ZERO_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CALCULO_CENARIO_ZERO_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ler__entrada_8h.html">ler_entrada.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="structparametros__type.html">    7</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structparametros__type.html">parametros_type</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structparametros__type.html#a62ee7f2ef77aacfdbdb787fb8961d3fc">    8</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structparametros__type.html#a62ee7f2ef77aacfdbdb787fb8961d3fc">S0</a>; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structparametros__type.html#ae5d95cb2fa6dbec38c81121f7c3070e4">    9</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structparametros__type.html#ae5d95cb2fa6dbec38c81121f7c3070e4">I0</a>; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structparametros__type.html#a8b06ea495f91d9de1419b3e3d265641e">   10</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structparametros__type.html#a8b06ea495f91d9de1419b3e3d265641e">R0</a>; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structparametros__type.html#a9a91d7daf8804e543983f70a6976438c">   11</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structparametros__type.html#a9a91d7daf8804e543983f70a6976438c">M0</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="structparametros__type.html#a2cd5754c864b0f7841c27e944bc8da6c">   12</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structparametros__type.html#a2cd5754c864b0f7841c27e944bc8da6c">tempo</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="calculo__cenarios_8h.html#ab71eb1975bb1491e60d2ba76e8ea53fa">   13</a></span>&#160;} <a class="code" href="calculo__cenarios_8h.html#ab71eb1975bb1491e60d2ba76e8ea53fa">Parametros_da_saida</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structvetor__de__parametros__type.html">   15</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structvetor__de__parametros__type.html">vetor_de_parametros_type</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structvetor__de__parametros__type.html#aa0f5d50a9d749573b74c4b25d7d0e777">   16</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structvetor__de__parametros__type.html#aa0f5d50a9d749573b74c4b25d7d0e777">tamanho</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structvetor__de__parametros__type.html#ae405b7f07243304a4362cc25a1526017">   17</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structvetor__de__parametros__type.html#ae405b7f07243304a4362cc25a1526017">tamanho_atual</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structvetor__de__parametros__type.html#a171064962b803762b49e81dfc144b0fa">   18</a></span>&#160;    <a class="code" href="structparametros__type.html">Parametros_da_saida</a> *<a class="code" href="structvetor__de__parametros__type.html#a171064962b803762b49e81dfc144b0fa">p</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="calculo__cenarios_8h.html#a0869de66fc09cb1428218c2fbd8acf4e">   19</a></span>&#160;} <a class="code" href="calculo__cenarios_8h.html#a0869de66fc09cb1428218c2fbd8acf4e">vetor_de_parametros</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<a class="code" href="structvetor__de__parametros__type.html">vetor_de_parametros</a> *<a class="code" href="calculo__cenarios_8h.html#a60043d5c91176abf5954438b7e56f259">create</a>(<a class="code" href="structdados__entrada__e.html">Dados_entrada</a>* pe);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<a class="code" href="structvetor__de__parametros__type.html">vetor_de_parametros</a> *<a class="code" href="calculo__cenarios_8h.html#a41e07652325b12834542b93a5db1253f">reallocar_vetor</a>(<a class="code" href="structvetor__de__parametros__type.html">vetor_de_parametros</a> *vetor_de_params);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="calculo__cenarios_8h.html#a5320186e4db6bca6a28ff1465986d346">liberar_vetor_de_parametros</a>(<a class="code" href="structvetor__de__parametros__type.html">vetor_de_parametros</a> *vp);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">double</span> <a class="code" href="calculo__cenarios_8h.html#a76d38881e9ab7dfdedfca375f43834c4">calcular_b</a>(<span class="keywordtype">double</span> N_b, <span class="keywordtype">double</span> T_b, <span class="keywordtype">double</span> S_b0, <span class="keywordtype">double</span> I_b0);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">double</span> <a class="code" href="calculo__cenarios_8h.html#aa183b174d685a2022f775069ce00c19e">calcular_k</a>(<span class="keywordtype">double</span> m_k, <span class="keywordtype">double</span> n_k, <span class="keywordtype">double</span> T_k);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">void</span> <a class="code" href="calculo__cenarios_8h.html#a18f6245dfa55adfd7195506f52333796">calcular_mec_sir</a>(<a class="code" href="structvetor__de__parametros__type.html">vetor_de_parametros</a> *vp, <a class="code" href="structdados__entrada__e.html">Dados_entrada</a> *dados_entrada);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="calculo__cenarios_8h.html#a906a7334f581369c20e1ddd8c363ed0c">   28</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="calculo__cenarios_8h.html#a906a7334f581369c20e1ddd8c363ed0c">calcular_mec_sir_mortes</a>(<a class="code" href="structvetor__de__parametros__type.html">vetor_de_parametros</a> *vp, <a class="code" href="structdados__entrada__e.html">Dados_entrada</a> *dados_entrada);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructvetor__de__parametros__type_html"><div class="ttname"><a href="structvetor__de__parametros__type.html">vetor_de_parametros_type</a></div><div class="ttdef"><b>Definition:</b> calculo_cenarios.h:15</div></div>
+<div class="ttc" id="astructparametros__type_html_a8b06ea495f91d9de1419b3e3d265641e"><div class="ttname"><a href="structparametros__type.html#a8b06ea495f91d9de1419b3e3d265641e">parametros_type::R0</a></div><div class="ttdeci">double R0</div><div class="ttdef"><b>Definition:</b> calculo_cenarios.h:10</div></div>
+<div class="ttc" id="astructparametros__type_html_a2cd5754c864b0f7841c27e944bc8da6c"><div class="ttname"><a href="structparametros__type.html#a2cd5754c864b0f7841c27e944bc8da6c">parametros_type::tempo</a></div><div class="ttdeci">double tempo</div><div class="ttdef"><b>Definition:</b> calculo_cenarios.h:12</div></div>
+<div class="ttc" id="acalculo__cenarios_8h_html_a76d38881e9ab7dfdedfca375f43834c4"><div class="ttname"><a href="calculo__cenarios_8h.html#a76d38881e9ab7dfdedfca375f43834c4">calcular_b</a></div><div class="ttdeci">double calcular_b(double N_b, double T_b, double S_b0, double I_b0)</div><div class="ttdef"><b>Definition:</b> calculo_cenarios.c:34</div></div>
+<div class="ttc" id="astructparametros__type_html_a9a91d7daf8804e543983f70a6976438c"><div class="ttname"><a href="structparametros__type.html#a9a91d7daf8804e543983f70a6976438c">parametros_type::M0</a></div><div class="ttdeci">double M0</div><div class="ttdef"><b>Definition:</b> calculo_cenarios.h:11</div></div>
+<div class="ttc" id="acalculo__cenarios_8h_html_a18f6245dfa55adfd7195506f52333796"><div class="ttname"><a href="calculo__cenarios_8h.html#a18f6245dfa55adfd7195506f52333796">calcular_mec_sir</a></div><div class="ttdeci">void calcular_mec_sir(vetor_de_parametros *vp, Dados_entrada *dados_entrada)</div><div class="ttdef"><b>Definition:</b> calculo_cenarios.c:42</div></div>
+<div class="ttc" id="astructparametros__type_html"><div class="ttname"><a href="structparametros__type.html">parametros_type</a></div><div class="ttdef"><b>Definition:</b> calculo_cenarios.h:7</div></div>
+<div class="ttc" id="astructparametros__type_html_ae5d95cb2fa6dbec38c81121f7c3070e4"><div class="ttname"><a href="structparametros__type.html#ae5d95cb2fa6dbec38c81121f7c3070e4">parametros_type::I0</a></div><div class="ttdeci">double I0</div><div class="ttdef"><b>Definition:</b> calculo_cenarios.h:9</div></div>
+<div class="ttc" id="acalculo__cenarios_8h_html_a5320186e4db6bca6a28ff1465986d346"><div class="ttname"><a href="calculo__cenarios_8h.html#a5320186e4db6bca6a28ff1465986d346">liberar_vetor_de_parametros</a></div><div class="ttdeci">void liberar_vetor_de_parametros(vetor_de_parametros *vp)</div><div class="ttdef"><b>Definition:</b> calculo_cenarios.c:29</div></div>
+<div class="ttc" id="astructparametros__type_html_a62ee7f2ef77aacfdbdb787fb8961d3fc"><div class="ttname"><a href="structparametros__type.html#a62ee7f2ef77aacfdbdb787fb8961d3fc">parametros_type::S0</a></div><div class="ttdeci">double S0</div><div class="ttdef"><b>Definition:</b> calculo_cenarios.h:8</div></div>
+<div class="ttc" id="astructvetor__de__parametros__type_html_aa0f5d50a9d749573b74c4b25d7d0e777"><div class="ttname"><a href="structvetor__de__parametros__type.html#aa0f5d50a9d749573b74c4b25d7d0e777">vetor_de_parametros_type::tamanho</a></div><div class="ttdeci">int tamanho</div><div class="ttdef"><b>Definition:</b> calculo_cenarios.h:16</div></div>
+<div class="ttc" id="acalculo__cenarios_8h_html_a906a7334f581369c20e1ddd8c363ed0c"><div class="ttname"><a href="calculo__cenarios_8h.html#a906a7334f581369c20e1ddd8c363ed0c">calcular_mec_sir_mortes</a></div><div class="ttdeci">void calcular_mec_sir_mortes(vetor_de_parametros *vp, Dados_entrada *dados_entrada)</div></div>
+<div class="ttc" id="aler__entrada_8h_html"><div class="ttname"><a href="ler__entrada_8h.html">ler_entrada.h</a></div></div>
+<div class="ttc" id="astructvetor__de__parametros__type_html_a171064962b803762b49e81dfc144b0fa"><div class="ttname"><a href="structvetor__de__parametros__type.html#a171064962b803762b49e81dfc144b0fa">vetor_de_parametros_type::p</a></div><div class="ttdeci">Parametros_da_saida * p</div><div class="ttdef"><b>Definition:</b> calculo_cenarios.h:18</div></div>
+<div class="ttc" id="acalculo__cenarios_8h_html_ab71eb1975bb1491e60d2ba76e8ea53fa"><div class="ttname"><a href="calculo__cenarios_8h.html#ab71eb1975bb1491e60d2ba76e8ea53fa">Parametros_da_saida</a></div><div class="ttdeci">struct parametros_type Parametros_da_saida</div></div>
+<div class="ttc" id="astructdados__entrada__e_html"><div class="ttname"><a href="structdados__entrada__e.html">dados_entrada_e</a></div><div class="ttdef"><b>Definition:</b> ler_entrada.h:8</div></div>
+<div class="ttc" id="astructvetor__de__parametros__type_html_ae405b7f07243304a4362cc25a1526017"><div class="ttname"><a href="structvetor__de__parametros__type.html#ae405b7f07243304a4362cc25a1526017">vetor_de_parametros_type::tamanho_atual</a></div><div class="ttdeci">int tamanho_atual</div><div class="ttdef"><b>Definition:</b> calculo_cenarios.h:17</div></div>
+<div class="ttc" id="acalculo__cenarios_8h_html_a60043d5c91176abf5954438b7e56f259"><div class="ttname"><a href="calculo__cenarios_8h.html#a60043d5c91176abf5954438b7e56f259">create</a></div><div class="ttdeci">vetor_de_parametros * create(Dados_entrada *pe)</div><div class="ttdef"><b>Definition:</b> calculo_cenarios.c:6</div></div>
+<div class="ttc" id="acalculo__cenarios_8h_html_aa183b174d685a2022f775069ce00c19e"><div class="ttname"><a href="calculo__cenarios_8h.html#aa183b174d685a2022f775069ce00c19e">calcular_k</a></div><div class="ttdeci">double calcular_k(double m_k, double n_k, double T_k)</div><div class="ttdef"><b>Definition:</b> calculo_cenarios.c:38</div></div>
+<div class="ttc" id="acalculo__cenarios_8h_html_a0869de66fc09cb1428218c2fbd8acf4e"><div class="ttname"><a href="calculo__cenarios_8h.html#a0869de66fc09cb1428218c2fbd8acf4e">vetor_de_parametros</a></div><div class="ttdeci">struct vetor_de_parametros_type vetor_de_parametros</div></div>
+<div class="ttc" id="acalculo__cenarios_8h_html_a41e07652325b12834542b93a5db1253f"><div class="ttname"><a href="calculo__cenarios_8h.html#a41e07652325b12834542b93a5db1253f">reallocar_vetor</a></div><div class="ttdeci">vetor_de_parametros * reallocar_vetor(vetor_de_parametros *vetor_de_params)</div><div class="ttdef"><b>Definition:</b> calculo_cenarios.c:23</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>
